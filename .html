@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Positioning Items</title>
+  <meta charset="UTF-8">
+  <style>  
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    p {
+      color: rgb(49, 51, 188);
+      line-height: 1.4;
+    }
+
+    /* colored boxes area */
+    nav {
+      overflow: hidden;
+      margin: auto;
+      margin-top: 30px;
+      padding: 10px;
+      width: 50%;
+    }
+    .box {
+      height: 120px;
+      width: 120px;
+      margin: 0;
+      padding: 5px;
+      border: 1px solid black;
+      color: aliceblue;
+      text-align: center;
+      float: left;
+    }
+
+    #red { background-color: red; }
+    #green { background-color: green; }
+    #blue { background-color: blue; }
+    #yellow { background-color: yellow; color: black; }
+    #orange { background-color: orange; }
+
+    .clear {
+      clear: both;
+    }
+
+    /* text area inside blue box */
+    main {
+      background-color: cadetblue;
+      margin: 30px auto;
+      padding: 20px;
+      width: 50%;
+      color: white;
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    h2 {
+      color: aliceblue;
+    }
+
+    .img-webpagetxt {
+      width: 200px;
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 5px;
+      clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+      shape-outside: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }
+
+    /* footer outside blue box */
+    footer { 
+      background-color: brown;
+      color: aliceblue;
+      text-align: center;
+      padding-top: 30px;
+      height: 100px;
+      margin-top: 50px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- colored boxes OUTSIDE -->
+  <nav>
+    <div class="box" id="red">Box 1</div>  
+    <div class="box" id="green">Box 2</div> 
+    <div class="box" id="blue">Box 3</div>  
+    <div class="box" id="yellow">Box 4</div>  
+    <div class="box" id="orange">Box 5</div>
+  </nav>
+
+  <div class="clear"></div>
+
+  <!-- text INSIDE the blue box -->
+  <main>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore at quos veniam amet illo quis iste atque delectus deleniti repudiandae totam, minus sint quasi aperiam doloribus hic nihil dicta.</p>
+
+    <p style="color: yellow;">
+      <img class="img-webpagetxt" src="img/Näyttökuva 2025-05-11 223733.png" alt="The webpage"/>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat provident asperiores ratione repudiandae ipsum aspernatur, doloribus totam, architecto commodi voluptate. Id, enim aperiam? Optio maiores sed dignissimos dolorum suscipit.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laborum dolore ratione et minus natus libero, omnis voluptatibus, sunt nihil quos corporis. Minus sapiente reprehenderit facilis ipsum quisquam accusantium repellendus.</p>
+  </main>
+
+  <!-- footer OUTSIDE -->
+  <footer>
+    &copy; Copyright
+  </footer>
+
+</body>
+</html>
